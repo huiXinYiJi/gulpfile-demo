@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>DTP</title>
+	<meta name="Keywords" content="DTP">
+	<meta name="Description" content="DTP是专业的数字货币交易网，数字资产交易平台，专注数字货币分发和维持数字资产撮合数字虚拟货币交易为核心，构建安全便捷的数字货币交易平台.">
+   	<meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta content="telephone=no" name="format-detection">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+	<link rel="stylesheet" href="./css/all.css?rev=8b0321f6b547b0220bd0f8accde37e40">
+</head>
+<body>
+	<div class="max-box">
+		<!-- 头部 -->
+		<div class="header">
+			<div class="width-limit">
+				<div class="header-box clearfix">
+					<div  class="logo-box lf">
+						<a href="/">
+							<img src="img/site-logo-1.png" alt="DTP">
+						</a>
+					</div>
+					<div class="nav-box rf">
+						<ul class="clearfix">
+							<li  class="nav-list">
+								<a href="./">
+									<span class="text-cn">首页</span>
+									<!-- <span class="text-en">HOME</span> -->
+								</a>
+							</li>
+							<li  class="nav-list">
+								<a href="./trading.html">
+									<span class="text-cn">交易中心</span>
+									<!-- <span class="text-en">TRADING CENTER</span> -->
+								</a>
+							</li>
+							<li  class="nav-list">
+								<a href="./news.html">
+									<span class="text-cn">新闻资讯</span>
+									<!-- <span class="text-en">NEWS</span> -->
+								</a>
+							</li>
+							<li  class="nav-list" data-log="unLogin">
+								<a href="./login.html">
+									<span class="text-cn">登录</span>
+									<!-- <span class="text-en">LOG IN</span> -->
+								</a>
+							</li>
+							<li  class="nav-list" data-log="unLogin">
+								<a href="./register.html">
+									<span class="text-cn">注册</span>
+									<!-- <span class="text-en">REGISTER</span> -->
+								</a>
+							</li>
+							<li  class="nav-list hide" data-log="logined" id="userInfo">
+								<a href="javascript:void(0)" class="userinfo">
+									<i class="user-icon"></i>
+									<span class="username">paly_so</span>
+								</a>
+							</li>
+							<li class="nav-list lang" id="navList">
+								<i class="current-lang lang-status lang-ch"></i>
+								<ul class="lang-list" id="langList">
+									<li class="lang-status lang-ch">
+										<a href="javascript:void(0)">简体中文</a>
+									</li>
+									<li class="lang-status lang-en">
+										<a href="javascript:void(0)">英文</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<!--点击用户名显示的 右侧菜单 -->
+			<div class="right-nav" id="rightNav">
+				<div class="right-top">
+					<div class="sec-nav finance">
+						<a href="/personal.html">
+							<i class="finance-icon icon"></i>
+							<span class="nav-name">资产</span>
+						</a>
+					</div>
+					<div class="sec-nav caiwu">
+						<a href="/finance.html">
+							<i class="caiwu-icon icon"></i>
+							<span class="nav-name">财务历史</span>
+						</a>
+					</div>
+					<div class="sec-nav settings">
+						<a href="/account.html">
+							<i class="set-icon icon"></i>
+							<span class="nav-name">账户</span>
+						</a>
+					</div>
+				</div>
+				<div class="right-bottom">
+					<div class="sec-nav logout">
+						<a href="javascript:void(0)">
+							<i class="logout-icon icon"></i>
+							<span class="nav-name">安全退出</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 内容 -->
+		<div class="user-content">
+			<!-- 内容上部分 -->
+			<div class="zichan">
+				<div class="width-limit">
+					<div class="zichan-box">
+						<div class="zichan-title">资产</div>
+						<div class="zichan-money">
+							<p>资产折合约为</p>
+							<p class="zichan-type">-BTC</p>
+							<p>≈￥０．００ＣＮＹ</p>
+						</div>
+						<div class="zichan-section clearfix">
+							<a href="javascript:void(0)" class="sect active" data-tab="sectionA">主板1</a>
+						</div>
+						<!--start mobile端 主板下拉框 -->
+						<div class="mobile-sectab self-select" id="mobileSelect">
+							<div class="select">
+								<div class="selected" data-select="selected">
+									<div class="tab" data-selectval="tab1">主板1</div>
+									<i class="icondrop" data-icon="drop"></i>
+									<!-- <i class="icondrop icon-up"></i> -->
+								</div>
+								<ul class="optionlist hide" data-select="ul">
+									<li class="option" data-select="option" data-val="tab1" data-text="主板1">主板1</li>
+									<!-- <li class="option" data-select="option" data-val="tab2" data-text="主板2">主板2</li> -->
+								</ul>
+							</div>
+						</div>
+						<!-- mobile端 主板下拉框 end -->
+					</div>
+				</div>
+			</div>
+			
+
+			<!-- 币种表格 -->
+			<div class="bizhong">
+				<div class="width-limit">
+					<div class="section-box">
+						<div class="sec-pat">
+							<!-- 主板1 -->
+							<div data-show="sectionA">
+								<div class="table">
+									<div class="row-hd">
+										<div class="row">
+											<span class="td">币种</span>
+											<span class="td">累积</span>
+											<span class="td">可用余额</span>
+											<span class="td">冻结</span>
+											<span class="td action">操作</span>
+										</div>
+									</div>
+									<div class="row-bd">
+										<div class="row">
+											<span class="td">BTC</span>
+											<span class="td">0.000000000000000000</span>
+											<span class="td">0.000000000000000000</span>
+											<span class="td">0.000000000000000000</span>
+											<span class="td act">
+												<a href="/address.html" class="addr" data-act="adrmanage">地址管理</a>
+												<a href="javascript:void(0)" class="charge" data-act="charge">充值</a>
+												<a href="javascript:void(0)" class="deposit" data-act="transmoney">提现</a>
+											</span>
+										</div>
+										<div class="row">
+											<span class="td">FT</span>
+											<span class="td">0.000000000000000000</span>
+											<span class="td">0.000000000000000000</span>
+											<span class="td">0.000000000000000000</span>
+											<span class="td act">
+												<a href="/address.html" class="addr" data-act="adrmanage">地址管理</a>
+												<a href="javascript:void(0)" class="charge" data-act="charge">充值</a>
+												<a href="javascript:void(0)" class="deposit" data-act="transmoney">提现</a>
+											</span>
+										</div>
+										<div class="row">
+											<span class="td">USDT</span>
+											<span class="td">0.000000000000000000</span>
+											<span class="td">0.000000000000000000</span>
+											<span class="td">0.000000000000000000</span>
+											<span class="td act">
+												<a href="/address.html" class="addr" data-act="adrmanage">地址管理</a>
+												<a href="javascript:void(0)" class="charge" data-act="charge">充值</a>
+												<a href="javascript:void(0)" class="deposit" data-act="transmoney">提现</a>
+											</span>
+										</div>
+										<div class="row">
+											<span class="td">LTC</span>
+											<span class="td">0.000000000000000000</span>
+											<span class="td">0.000000000000000000</span>
+											<span class="td">0.000000000000000000</span>
+											<span class="td act">
+												<a href="/address.html" class="addr" data-act="adrmanage">地址管理</a>
+												<a href="javascript:void(0)" class="charge" data-act="charge">充值</a>
+												<a href="javascript:void(0)" class="deposit" data-act="transmoney">提现</a>
+											</span>
+										</div>
+										<div class="row">
+											<span class="td">BCH</span>
+											<span class="td">0.000000000000000000</span>
+											<span class="td">0.000000000000000000</span>
+											<span class="td">0.000000000000000000</span>
+											<span class="td act">
+												<a href="/address.html" class="addr" data-act="adrmanage">地址管理</a>
+												<a href="javascript:void(0)" class="charge" data-act="charge">充值</a>
+												<a href="javascript:void(0)" class="deposit" data-act="transmoney">提现</a>
+											</span>
+										</div>
+										<div class="row">
+											<span class="td">ETH</span>
+											<span class="td">0.000000000000000000</span>
+											<span class="td">0.000000000000000000</span>
+											<span class="td">0.000000000000000000</span>
+											<span class="td act">
+												<a href="/address.html" class="addr" data-act="adrmanage">地址管理</a>
+												<a href="javascript:void(0)" class="charge" data-act="charge">充值</a>
+												<a href="javascript:void(0)" class="deposit" data-act="transmoney">提现</a>
+											</span>
+										</div>
+										<div class="row">
+											<span class="td">ETC</span>
+											<span class="td">0.000000000000000000</span>
+											<span class="td">0.000000000000000000</span>
+											<span class="td">0.000000000000000000</span>
+											<span class="td act">
+												<a href="/address.html" class="addr" data-act="adrmanage">地址管理</a>
+												<a href="javascript:void(0)" class="charge" data-act="charge">充值</a>
+												<a href="javascript:void(0)" class="deposit" data-act="transmoney">提现</a>
+											</span>
+										</div>
+										<div class="row">
+											<span class="td">XRP</span>
+											<span class="td">0.000000000000000000</span>
+											<span class="td">0.000000000000000000</span>
+											<span class="td">0.000000000000000000</span>
+											<span class="td act">
+												<a href="/address.html" class="addr" data-act="adrmanage">地址管理</a>
+												<a href="javascript:void(0)" class="charge" data-act="charge">充值</a>
+												<a href="javascript:void(0)" class="deposit" data-act="transmoney">提现</a>
+											</span>
+										</div>
+									</div>
+									<div class="table-page clearfix">
+										<ul class="table-pager">
+											<li class="prev">
+												<a href="javascript:void(0)"></a>
+											</li>
+											<li class="active">
+												<a href="javascript:void(0)">1</a>
+											</li>
+											<li>
+												<a href="javascript:void(0)">2</a>
+											</li>
+											<li>
+												<a href="javascript:void(0)">3</a>
+											</li>
+											<li>
+												<a href="javascript:void(0)">4</a>
+											</li>
+											<li>
+												<a href="javascript:void(0)">5</a>
+											</li>
+											<li class="elli"><span>...</span></li>
+											<li>
+												<a href="javascript:void(0)">尾页</a>
+											</li>
+											<li class="next"><a href="javascript:void(0)"></a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- start mobile端 币种数据展示 -->
+					<div class="mobile-bit">
+						<div class="mobile-tab">
+							<!--start tab1内容 -->
+							<div class="tab-box" data-mtab="tab1">
+								<div class="tab-th">
+									<div class="tab-tr">
+										<div class="label">币种</div>
+										<!-- 币种下拉框 -->
+										<div class="self-select" id="bitSelect">
+											<div class="select">
+												<div class="selected" data-select="selected">
+													<div class="tab" data-selectval="btc">BTC</div>
+													<i class="icondrop" data-icon="drop"></i>
+													<!-- <i class="icondrop icon-up"></i> -->
+												</div>
+												<ul class="optionlist hide" data-select="ul">
+													<li class="option" data-select="option" data-val="btc" data-text="BTC">BTC</li>
+													<!-- <li class="option" data-select="option" data-val="eth" data-text="ETH">ETH</li> -->
+												</ul>
+											</div>
+										</div>
+										<!-- 币种下拉框end -->
+									</div>
+								</div>
+								<div class="tab-tb">
+									<div class="tab-tr">
+										<div class="label">累积</div>
+										<div class="label-data">0.000000000000000000</div>
+									</div>
+									<div class="tab-tr">
+										<div class="label">可用余额</div>
+										<div class="label-data">0.000000000000000000</div>
+									</div>
+									<div class="tab-tr">
+										<div class="label">冻结</div>
+										<div class="label-data">0.000000000000000000</div>
+									</div>
+								</div>
+								<div class="tab-tf">
+									<div class="tab-tr act">
+										<div class="label">操作</div>
+										<div class="label-data">
+											<a href="/address.html" class="addr" data-act="adrmanage">地址管理</a>
+											<a href="javascript:void(0)" class="charge" data-act="charge">充值</a>
+											<a href="javascript:void(0)" class="deposit" data-act="transmoney">提现</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- tab1内容 end-->
+						</div>
+					</div>
+					<!-- mobile端 币种数据展示end -->
+					<!-- start充值弹窗 -->
+					<div class="popup" id="chongzhi">
+						<div class="pop-box">
+							<div class="pop-title clearfix">
+								<p class="lf">充值</p>
+								<div class="close rf" data-act="closePop">
+									<img src="./img/close.png" alt="关闭弹窗">
+								</div>
+							</div>
+							<div class="pop-content">
+								<div class="pop-link clearfix">
+									<span class="history-label">充值地址（ETC）</span>
+									<a href="/charge.html" class="history-btn">充值历史</a>
+								</div>
+								<div class="pop-code">0x07c7effb8bb4d96e12954a953d363575dbf6a5cf</div>
+								<div class="pop-qrimg">
+									<img src="http://via.placeholder.com/240x240" alt="充值地址">
+								</div>
+								<div class="pop-tip">
+									<p class="tipa">该地址仅用于充值<span>ETC</span></p>
+									<p class="tipb">向该地址充值需要整个网络的确认。 充值金额将在60秒确认后到账。 最低充值金额：0.01 。  充值金额低于0.01 将不会被记录</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- start提现弹窗 -->
+					<div class="popup" id="tixian">
+						<div class="pop-box">
+							<form id="tixianForm">
+								<div class="pop-title clearfix">
+									<p class="lf">提现</p>
+									<div class="close rf" data-act="closePop">
+										<img src="./img/close.png" alt="关闭弹窗">
+									</div>
+								</div>
+								<div class="pop-content">
+									<div class="pop-link clearfix">
+										<span class="history-label">可用余额: 0.000000000000000000</span>
+										<a href="/deposit.html" class="history-btn">提现历史</a>
+									</div>
+									<div class="addr-box input-box">
+										<label for="addr" class="label">地址</label>
+										<input class="txt" type="text" name="addr" id="addr">
+										<div class="drop" data-act="showDropList">
+											<i class="dropdown" id="dropIcon"></i>
+										</div>
+										<div class="addr-list" id="addrList">
+											<ul>
+												<li>提现卡号0000000000000000  ----工商银行</li>
+												<li>提现卡号0000000000000000  ----工商银行</li>
+												<li>提现卡号0000000000000000  ----工商银行</li>
+											</ul>
+										</div>
+									</div>
+									<div class="bi-num input-box">
+										<label for="biNum" class="label">ETC 数量</label>
+										<input class="txt" type="text" name="binum" id="biNum">
+									</div>
+									<div class="service-charge">手续费 : 0.000000000000000000  ETC</div>
+									<div class="pop-tip">
+										<p class="tipa tip">最小提现金额: 0.01 ETC</p>
+										<p class="tipb tip">一旦您提交提现申请，我们将给您发送一封提现确认邮件，请您点击邮件中的确认链接</p>
+									</div>
+									<div class="tixian-btn">
+										<a href="javascript:void(0)">提现</a>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+					<div class="fade"></div>
+				</div>
+			</div>
+		</div>
+		<!-- 底部 -->
+		<div class="footer">
+			<div class="width-limit">
+				<div class="footer-box">
+					<h2>Cooperative <span class="sec">partner</span></h2>
+					<div class="blogroll">
+						<img src="img/blogroll.png" alt="友情链接">
+					</div>
+					<div class="foot-bottom clearfix">
+						<div class="foot-logo lf">
+							<img src="img/site-logo-footer.png" alt="DTP">
+						</div>
+						<div class="foot-info lf">
+							<div class="info-box service lf">
+								<dl>
+									<dt>服务</dt>
+									<dd><a href="./trading.html">交易中心</a></dd>
+									<dd><a href="javascript:void(0)">支持</a></dd>
+									<dd><a href="javascript:void(0)">提交请求</a></dd>
+								</dl>
+							</div>
+							<div class="info-box terms lf">
+								<dl>
+									<dt>条款说明</dt>
+									<dd><a href="javascript:void(0)">隐私政策</a></dd>
+									<dd><a href="javascript:void(0)">用户协议</a></dd>
+									<dd><a href="javascript:void(0)">手续费</a></dd>
+								</dl>
+							</div>
+							<div class="info-box about lf">
+								<dl>
+									<dt>关于我们</dt>
+									<dd><a href="javascript:void(0)">客户支持</a></dd>
+									<dd><a href="javascript:void(0)">联系我们</a></dd>
+									<dd><a href="./research.html">申请上币</a></dd>
+								</dl>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/base.js?rev=61de902955ef80bfc9239c750d3a74bf"></script>
+	<script src="js/personal.js?rev=f55bc3e18e8262886023f6b4f5d0f86b"></script>
+</body>
+</html>

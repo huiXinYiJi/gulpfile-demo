@@ -1,0 +1,182 @@
+.research-box{
+	background-color:#393939;
+	.research-title{
+	    padding: 40px 0;
+		background-color:#393939;
+		font-size:44px;
+		font-weight:400;
+		color:#fff;
+		text-align:center;
+	}
+	.research-cont{
+		padding:80px 10%;
+		background-color:#272727;
+		.txt-box{
+			width:100%;
+			margin-bottom: 30px;
+			.label{
+				display: block;
+				color:$siteColor;
+				font-size:18px;
+				font-weight:400;
+				line-height:30px;
+				.spec{
+					margin-left:15px;
+					color:#ff6f6f;
+				    vertical-align: -4px;
+				}
+			}
+			.tip{
+				font-size:16px;
+				font-weight:400;
+				color:#5a5a5a;
+				line-height: 30px;
+			    margin-bottom: 5px;
+			}
+			.txt{
+				width:100%;
+				height:45px;
+				border:1px solid #5a5a5a;
+				outline:none;
+				padding-left:5px;
+				color:#fff;
+				background-color:#272727;
+			}
+			.date-box{
+				position:relative;
+				width:100%;
+				.calendary{
+					position:absolute;
+				    top: 10px;
+    				left: 10px;
+					display:inline-block;
+					background-image:url(./../img/calen.png?__spriter);
+					/*background-size: 28px 26px;
+					background-repeat: no-repeat;*/
+					width:28px;
+					height:26px;
+				}
+				.txt{
+					padding-left:50px;
+				}
+			}
+			.textarea{
+				width:100%;
+				height:260px;
+				overflow-y: auto;
+				background-color:#272727;
+				color:#fff;
+				outline:none;
+				border:1px solid #5a5a5a;
+			}
+			.upload-wrap{
+				width:100%;
+				position:relative;
+				border:1px dashed #5a5a5a;
+				&:hover{
+					.button{
+						color:$siteColor;
+					}
+				};
+				.button{
+				    padding: 10px 0;
+					width:100%;
+					z-index:1;
+					color:#5a5a5a;
+					font-size:16px;
+					font-weight:400;
+					&:before{
+						content:"";
+						display:inline-block;
+						background-image:url(./../img/add.png);
+						background-repeat: no-repeat;
+						background-size: 18px 18px;
+						background-position: center;
+						width:50px;
+						height:18px;
+					};
+					.file-name{
+						z-index:1;
+						color:$siteColor;
+						font-size:16px;
+						font-weight:400;
+					    white-space: normal;
+    					margin-left: 20px;
+						@extend .ellipsis;
+					}
+				}
+				.txt-file{
+					position: absolute;
+					width:100%;
+					height:100%;
+					opacity:0;
+					z-index:2;
+					cursor:pointer;
+					top: 0;
+    				left: 0;
+				}
+			}
+		}
+		.submit-box{
+		    width: 235px;
+			height:55px;
+			margin:0 auto;
+			.btn{
+				width:100%;
+				height:55px;
+				line-height:55px;
+				text-align:center;
+				outline:none;
+				border:1px solid $siteColor;
+				color:#fff;
+				background-color:#272727;
+				cursor:pointer;
+				&:hover{
+					background-color:$siteColor;
+				};
+			}
+		}
+	}
+}
+/*日历插件样式重写*/
+.daterangepicker.ltr .drp-calendar.left{
+	background-color: #393939;
+}
+.daterangepicker .calendar-table{
+	background-color: #393939;
+}
+.daterangepicker .calendar-table .next span, .daterangepicker .calendar-table .prev span{
+    border: solid #fff;
+    border-width: 0 2px 2px 0;
+}
+.daterangepicker td.off, .daterangepicker td.off.in-range, .daterangepicker td.off.start-date, .daterangepicker td.off.end-date{
+    background-color: transparent;
+}
+.daterangepicker td.available:hover, .daterangepicker th.available:hover{
+	background-color: #c5a47e;
+}
+.daterangepicker td.active, .daterangepicker td.active:hover{
+	background-color: #c5a47e;
+}
+.daterangepicker{
+    border: 1px solid #5a5a5a;
+    background-color: #393939;
+}
+.daterangepicker:after{
+	border-bottom-color:#5a5a5a;
+}
+/*适配*/
+@media only screen and (min-width:320px) and (max-width:768px){
+    .research-box .research-title{
+    	font-size:24px;
+    }
+}
+@media only screen and (max-width:319px){
+	.research-box .research-title{
+    	font-size: 18px;
+    }
+    .research-box .research-cont .submit-box{
+    	width:100%;
+    	background:red;
+    }
+}

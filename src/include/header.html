@@ -1,0 +1,95 @@
+<!-- 头部 -->
+<div class="header">
+	<div class="width-limit">
+		<div class="header-box clearfix">
+			<div @@if(context.main=='hide'){class='hide'} class="logo-box lf">
+				<a href="/">
+					<img src="img/site-logo-1.png" alt="DTP">
+				</a>
+			</div>
+			<div class="nav-box rf">
+				<ul class="clearfix">
+					<li @@if(context.home=='active'){class='active'} class="nav-list">
+						<a href="./">
+							<span class="text-cn">首页</span>
+							<!-- <span class="text-en">HOME</span> -->
+						</a>
+					</li>
+					<li @@if(context.tradingCenter=='active'){class='active'} class="nav-list">
+						<a href="./trading.html">
+							<span class="text-cn">交易中心</span>
+							<!-- <span class="text-en">TRADING CENTER</span> -->
+						</a>
+					</li>
+					<li @@if(context.news=='active'){class='active'} class="nav-list">
+						<a href="./news.html">
+							<span class="text-cn">新闻资讯</span>
+							<!-- <span class="text-en">NEWS</span> -->
+						</a>
+					</li>
+					<li @@if(context.login=='active'){class='active'} class="nav-list" data-log="unLogin">
+						<a href="./login.html">
+							<span class="text-cn">登录</span>
+							<!-- <span class="text-en">LOG IN</span> -->
+						</a>
+					</li>
+					<li @@if(context.register=='active'){class='active'} class="nav-list" data-log="unLogin">
+						<a href="./register.html">
+							<span class="text-cn">注册</span>
+							<!-- <span class="text-en">REGISTER</span> -->
+						</a>
+					</li>
+					<li @@if(context.userinfo=='active'){class='active'} class="nav-list hide" data-log="logined" id="userInfo">
+						<a href="javascript:void(0)" class="userinfo">
+							<i class="user-icon"></i>
+							<span class="username">paly_so</span>
+						</a>
+					</li>
+					<li class="nav-list lang" id="navList">
+						<i class="current-lang lang-status lang-ch"></i>
+						<ul class="lang-list" id="langList">
+							<li class="lang-status lang-ch">
+								<a href="javascript:void(0)">简体中文</a>
+							</li>
+							<li class="lang-status lang-en">
+								<a href="javascript:void(0)">英文</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<!--点击用户名显示的 右侧菜单 -->
+	<div class="right-nav" id="rightNav">
+		<div class="right-top">
+			<div class="sec-nav finance">
+				<a href="/personal.html">
+					<i class="finance-icon icon"></i>
+					<span class="nav-name">资产</span>
+				</a>
+			</div>
+			<div class="sec-nav caiwu">
+				<a href="/finance.html">
+					<i class="caiwu-icon icon"></i>
+					<span class="nav-name">财务历史</span>
+				</a>
+			</div>
+			<div class="sec-nav settings">
+				<a href="/account.html">
+					<i class="set-icon icon"></i>
+					<span class="nav-name">账户</span>
+				</a>
+			</div>
+		</div>
+		<div class="right-bottom">
+			<div class="sec-nav logout">
+				<a href="javascript:void(0)">
+					<i class="logout-icon icon"></i>
+					<span class="nav-name">安全退出</span>
+				</a>
+			</div>
+		</div>
+	</div>
+</div>

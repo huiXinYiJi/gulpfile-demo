@@ -1,0 +1,501 @@
+.history-top{
+	background-color:#393939;
+	.history-title{
+		height:80px;
+		line-height: 80px;
+		font-weight:400;
+		color:$siteColor;
+		.return{
+			width:70px;
+			height:80px;
+			display: box;
+		    display: -webkit-box;
+		    -webkit-box-align: center;
+		    -webkit-box-pack: center;
+		    cursor:pointer;
+		    img{
+		    	width:34px;
+		    	height:29px;
+		    }
+		}
+		h2{
+			font-size:32px;
+			font-weight:400;
+		}
+	}
+}
+.history-content{
+	background-color:#272727;
+	.mobile-history{
+		display:none;
+	}
+	.history-table{
+		.row{
+			width:100%;
+			text-align:center;
+			.td{
+				float:left;
+			}
+			.time{
+				width:15%;
+				text-align:left;
+			}
+			.type{
+				width:15%;
+			}
+			.num{
+				width:15%;
+			}
+			.addr{
+				width:40%;
+			}
+			.status{
+				width:15%;
+				text-align:right;
+			}
+		}
+		.his-th{
+			width:100%;
+			color:$siteColor;
+			font-size:16px;
+			font-weight:400;
+			.row{
+				padding: 15px 0;
+			}
+		}
+		.his-tb{
+			width:100%;
+			color:#fff;
+			font-size:14px;
+			font-weight:400;
+			min-height:600px;
+			.row{
+				.td{
+					padding: 10px 0;
+				}
+			}
+			.nodata{
+				font-size:14px;
+				font-weight:400;
+				color:$siteColor;
+				text-align:center;
+				margin:60px 0;
+				.img{
+					width:123px;
+					height:81px;
+					margin: 0 auto;
+				}
+			}
+		}
+		.table-page{
+			margin:30px 0;
+		}
+	}
+}
+.deposit-history{
+	.history-content{
+		.history-table{
+			.row{
+				.time{
+					width:15%;
+				}
+				.type{
+				    width: 25%;
+				}
+				.num{
+				    width: 15%;
+				}
+				.addr{
+				    width: 15%;
+				}
+				.status{
+					width: 10%;
+					text-align:center;
+				}
+				.act{
+					width:20%;
+					text-align:right;
+				}
+			}
+		}
+	}
+}
+.addr-history{
+	.history-content{
+		.history-table{
+			.row{
+				.addr{
+					width:33.3%;
+					text-align:left;
+				}
+				.mark{
+				    width: 33.3%;
+				    text-align:center;
+				}
+				.act{
+				    width:33.3%;
+				    text-align:right;
+				}
+			}
+			.his-tb{
+				.row{
+					.act{
+						cursor:pointer;
+					    &:hover{
+					    	color:$siteColor;
+					    };
+					}
+				}
+			}
+		}
+	}
+	.history-mid{
+		background-color:#393939;
+		padding:40px 0;
+		.addr-add{
+			width:100%;
+		    border-top: 1px solid #5a5a5a;
+			padding: 40px 0 50px;
+			.addr-input{
+				width:35%;
+				position:relative;
+				height:45px;
+				margin-right:10%;
+				.label{
+					position:absolute;
+					z-index:11;
+					color:$siteColor;
+					font-size:16px;
+					font-weight:400;
+					display:inline-block;
+					top:0;
+					left:0;
+				    width: 80px;
+				    height: 45px;
+				    line-height: 45px;
+				    text-align: center;
+				}
+				.txt{
+					position:absolute;
+					top:0;
+					right:0;
+					width:100%;
+					height:45px;
+					padding-left:80px;
+					color:#fff;
+					outline:none;
+					border:none;
+					border-bottom:1px solid #5a5a5a;
+					z-index:10;
+					background-color:#393939;
+				}
+			}
+			.addr-btn{
+				width:10%;
+				height:45px;
+				a{
+					width:100%;
+					display:inline-block;
+					height:45px;
+					line-height: 45px;
+					text-align:center;
+					color:#fff;
+					font-size:14px;
+					font-weight:400;
+					background-color:$siteColor;
+					&:hover{
+						background-color:rgb(181,148,110);
+					};
+				}
+			}
+		}
+	}
+}
+.fina-history{
+	.history-content{
+		.history-table{
+			.row{
+				.time{
+					width:25%;
+					text-align:left;
+				}
+				.style{
+				    width: 25%;
+				    text-align:center;
+				}
+				.type{
+				    width:25%;
+				    text-align:center;
+				}
+				.num{
+					width:25%;
+					text-align:right;
+				}
+			}
+		}
+	}
+}
+.history-tab{
+	background-color:#393939;
+    padding-top: 20px;
+	.tab-box{
+		a{
+			display: inline-block;
+		    width: 142px;
+		    height: 60px;
+		    text-align: center;
+		    line-height: 60px;
+		    color: $siteColor;
+		    font-size: 20px;
+		    font-weight: 400;
+		    float:left;
+		    background-color:#393939;
+		    &.active{
+		    	border-top: 5px solid #c5a47e;
+		    	background-color: #272727;
+		    }
+		    &:hover{
+		    	color:#fff;
+		    };
+		}
+	}
+	.finance-select{
+		display:none;
+	}
+}
+.creat-api{
+	.history-title{
+		border-bottom:2px solid #5a5a5a;
+	}
+	.history-mid{
+		background-color:#393939;
+		padding: 15px 0 30px;
+		.api-tip{
+			padding-left:20px;
+			font-size:14px;
+			font-weight:400;
+			color:$siteColor;
+		    margin-bottom: 50px;
+		}
+		.addr-add{
+			padding-left:20px;
+		}
+		.api-input{
+			width:50%;
+			margin-right:5%;
+			.txt{
+				width:100%;
+				outline:none;
+				border:none;
+				background-color:transparent;
+				border-bottom:4px solid #5a5a5a;
+				height:60px;
+				color:$siteColor;
+				font-size:18px;
+				font-weight:400;
+				&::-webkit-input-placeholder{
+					color:$siteColor;
+				};
+			}
+		}
+		.api-btn{
+			width:20%;
+			a{
+				display: block;
+				width:100%;
+				height:60px;
+				line-height:60px;
+				color:#fff;
+				background-color:$siteColor;
+				text-align:center;
+				&:hover{
+					background-color:rgb(181,148,110);
+				};
+			}
+		}
+	}
+	.history-content{
+		.history-table{
+			.row{
+				.td{
+					width:20%;
+				}
+				.act{
+					text-align:right;
+					a{
+						color:#fff;
+						&:hover{
+							color:$siteColor;
+						};
+					}
+				}
+			}
+		}
+	}
+}
+@media only screen and(max-width:768px){
+	.history{
+		padding-top:60px;
+	}
+	.history-top .history-title h2{
+		font-size: 28px;
+	}
+	.history-table{
+	    width: 96%;
+    	margin: 0 auto;
+	}
+	.history-content{
+		width:100%;
+	}
+	.history-content .history-table .his-tb{
+		font-size:12px;
+		min-height: 400px;
+	}
+	.deposit-history .history-content .history-table{
+		display:none;
+	}
+	.deposit-history .history-content .mobile-history{
+		display:block;
+		width:90%;
+		margin:0 auto;
+		.tab-box{
+			.tab-tr{
+				font-size:16px;
+				color:#fff;
+				font-weight:400;
+			    margin: 20px 0;
+				&:after{
+					@include clearfix;
+				};
+				.label{
+					float:left;
+					width:40%;
+					color:$siteColor;
+					height:60px;
+					line-height: 60px;
+				}
+				.self-select{
+					float:right;
+					width:57%;
+				}
+				.label-data{
+				    padding: 14px 0;
+					line-height: 1;
+					width:57%;
+					float:right;
+					text-align:right;
+				}
+				&.act{
+					.label{
+					    width: 29%;
+					}
+					.label-data{
+					    width: 70%;
+					    font-size:0;
+						a{
+							color:$siteColor;
+							font-size:16px;
+							font-weight:400;
+							display:inline-block;
+							width:100%;
+							text-align:right;
+						    padding: 8px 0;
+						}
+					}
+				}
+			}
+		}
+	}
+	.addr-history .history-mid{
+	    padding: 10px 0 40px;
+	}
+	.addr-history .history-mid .addr-add{
+		border-top:none;
+	    padding: 0;
+        width: 90%;
+    	margin: 0 auto;
+	    .addr-input{
+	    	width:100%;
+	    }
+	    .addr-btn{
+	    	width: 50%;
+		    height: 45px;
+		    margin:30px 25% 0;
+	    }
+	}
+	.fina-history{
+		.history-top{
+		    float: left;
+		    width: 45%;
+			background-color: #272727;
+		    margin: 20px 0;
+			.history-title{
+			    margin-left: 10px;
+			}
+		}
+		.history-tab{
+			width: 52%;
+    		float: right;
+    		background-color: #272727;
+		    padding-top: 0;
+    		margin: 30px 0;
+    		&:after{
+    			@include clearfix;
+    		};
+			.finance-tab{
+				display:none;
+			}
+			.finance-select{
+				display:block;
+			}
+		}
+		.history-content{
+		    float: left;
+		    .chognzhi{
+	    	    width: 96%;
+    			margin: 0 auto;
+		    }
+		}
+	}
+	.creat-api{
+		.history-top{
+			.history-title{
+			    width: 90%;
+    			margin: 0 auto;
+    			border-bottom:none;
+			}
+		}
+		.history-mid{
+			.api-tip{
+				width: 90%;
+    			margin: 0 auto;
+			    padding-left: 0;
+			}
+			.api-input{
+				width:100%;
+			}
+			.api-btn{
+			    width: 100%;
+			    margin-top: 30px;
+			    a{
+			    	width: 50%;
+    				margin: 0 auto;
+			    }
+			}
+		}
+		.history-content .history-table .row .td{
+			font-size:14px;
+		}
+		.history-content .history-table .row .act{
+			a{
+				color:#fff;
+			}
+		}
+	}
+}
+@media only screen and (max-width:319px){
+	.history{
+		padding-top:120px;
+	    background: #393939;
+	}
+}

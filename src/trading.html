@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>DTP</title>
+	<meta name="Keywords" content="DTP">
+	<meta name="Description" content="DTP是专业的数字货币交易网，数字资产交易平台，专注数字货币分发和维持数字资产撮合数字虚拟货币交易为核心，构建安全便捷的数字货币交易平台.">
+   	<meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta content="telephone=no" name="format-detection">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+	<link rel="stylesheet" href="./css/all.css?rev=@@hash">
+</head>
+<body>
+	<div class="max-box">
+		@@include('header.html',{
+			"tradingCenter":"active"
+		})
+		<div class="trading-box">
+			<!-- 头部 -->
+			<div class="trading-head">
+				<div class="trad-nav clearfix">
+					<div class="sel lf">
+						<div class="selleft-dropdown">
+							<!-- 默认展示的币种 -->
+							<div class="sel-default" data-sel="bitname">
+								<div class="sel-name clearfix">
+									<div class="bit-img">
+										<img src="img/BTC.png">
+									</div>
+									<span class="bit-name">BTC/USDT</span>
+								</div>
+								<i class="icondrop" data-icon="drop"></i>
+								<!-- <i class="icondrop icon-up"></i> -->
+								<input class="inpt" type="hidden" name="bit-type" value="BTC">
+							</div>
+							<!-- 下拉框 -->
+							<div class="sel-drop hide" data-show="droplist">
+								<div class="li" data-value="BTC">
+									<div class="bit-img">
+										<img src="img/BTC.png">
+									</div>
+									<span class="bit-name">BTC/USDT</span>
+								</div>
+								<div class="li" data-value="ETH">
+									<div class="bit-img">
+										<img src="img/ETH.png">
+									</div>
+									<span class="bit-name">ETH/USDT</span>
+								</div>
+								<div class="li" data-value="LTC">
+									<div class="bit-img">
+										<img src="img/LTC.png">
+									</div>
+									<span class="bit-name">LTC/USDT</span>
+								</div>
+								<div class="li" data-value="BCH">
+									<div class="bit-img">
+										<img src="img/BCH.png">
+									</div>
+									<span class="bit-name">BCH/USDT</span>
+								</div>
+								<div class="li" data-value="-1" data-sel="other">
+									<div class="other">
+										<span>其他</span>
+										<div class="icon">
+											<i class="icon-right"></i>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- 其他币种菜单列表 -->
+						<div class="slide-right hide" data-show="slideright" id="secondNav">
+							<div class="sel-table">
+								<!-- 表头 -->
+								<div class="sel-th">
+									<div class="sel-row">
+										<div class="sel-td order">
+											<a href="javascript:void(0)">顺序</a>
+										</div>
+										<div class="sel-td name">
+											<a href="javascript:void(0)">名称</a>
+										</div>
+										<div class="sel-td rate">
+											<a href="javascript:void(0)">涨跌幅</a>
+										</div>
+										<div class="sel-td price">
+											<a href="javascript:void(0)">价格</a>
+										</div>
+										<div class="sel-td deal">
+											<a href="javascript:void(0)">成交额（24h）</a>
+										</div>
+										<div class="sel-td act">操作</div>
+									</div>
+								</div>
+								<!-- 数据内容 -->
+								<div class="sel-tb">
+									<div class="sel-row active">
+										<div class="sel-td order">1</div>
+										<div class="sel-td name clearfix">
+											<div class="bit-img lf">
+												<img src="img/BTC.png">
+											</div>
+											<span class="lf">BTC/USDT</span>
+										</div>
+										<div class="sel-td rate">-7.39%</div>
+										<div class="sel-td price">¥51,412</div>
+										<div class="sel-td deal">¥3,338,923万</div>
+										<div class="sel-td act">
+											<a href="javascript:void(0)">取消关注</a>
+										</div>
+									</div>
+									<div class="sel-row">
+										<div class="sel-td order">2</div>
+										<div class="sel-td name clearfix">
+											<div class="bit-img lf">
+												<img src="img/ETH.png">
+											</div>
+											<span class="lf">ETH/USDT</span>
+										</div>
+										<div class="sel-td rate">-6.27%</div>
+										<div class="sel-td price">¥51,412</div>
+										<div class="sel-td deal">¥3,338,923万</div>
+										<div class="sel-td act">
+											<a href="javascript:void(0)">取消关注</a>
+										</div>
+									</div>
+									<div class="sel-row">
+										<div class="sel-td order">3</div>
+										<div class="sel-td name clearfix">
+											<div class="bit-img lf">
+												<img src="img/LTC.png">
+											</div>
+											<span class="lf">LTC/USDT</span>
+										</div>
+										<div class="sel-td rate">-6.27%</div>
+										<div class="sel-td price"></div>
+										<div class="sel-td deal"></div>
+										<div class="sel-td act"></div>
+									</div>
+									<div class="sel-row">
+										<div class="sel-td order">4</div>
+										<div class="sel-td name clearfix">
+											<div class="bit-img lf">
+												<img src="img/BCH.png">
+											</div>
+											<span class="lf">BCH/USDT</span>
+										</div>
+										<div class="sel-td rate">-6.27%</div>
+										<div class="sel-td price"></div>
+										<div class="sel-td deal"></div>
+										<div class="sel-td act"></div>
+									</div>
+									<div class="sel-row">
+										<div class="sel-td order">5</div>
+										<div class="sel-td name clearfix">
+											<div class="bit-img lf">
+												<img src="img/sample.png">
+											</div>
+											<span class="lf">EOS/USDT</span>
+										</div>
+										<div class="sel-td rate">-6.27%</div>
+										<div class="sel-td price">¥51,412</div>
+										<div class="sel-td deal">¥3,338,923万</div>
+										<div class="sel-td act">
+											<a href="javascript:void(0)">取消关注</a>
+										</div>
+									</div>
+									<div class="sel-row">
+										<div class="sel-td order">6</div>
+										<div class="sel-td name clearfix">
+											<div class="bit-img lf">
+												<img src="img/sample.png">
+											</div>
+											<span class="lf">EOS/USDT</span>
+										</div>
+										<div class="sel-td rate">-6.27%</div>
+										<div class="sel-td price"></div>
+										<div class="sel-td deal"></div>
+										<div class="sel-td act"></div>
+									</div>
+									<div class="sel-row">
+										<div class="sel-td order">7</div>
+										<div class="sel-td name clearfix">
+											<div class="bit-img lf">
+												<img src="img/sample.png">
+											</div>
+											<span class="lf">EOS/USDT</span>
+										</div>
+										<div class="sel-td rate">-6.27%</div>
+										<div class="sel-td price"></div>
+										<div class="sel-td deal"></div>
+										<div class="sel-td act"></div>
+									</div>
+									<div class="sel-row">
+										<div class="sel-td order">8</div>
+										<div class="sel-td name clearfix">
+											<div class="bit-img lf">
+												<img src="img/sample.png">
+											</div>
+											<span class="lf">EOS/USDT</span>
+										</div>
+										<div class="sel-td rate">-6.27%</div>
+										<div class="sel-td price"></div>
+										<div class="sel-td deal"></div>
+										<div class="sel-td act"></div>
+									</div>
+									<div class="sel-row">
+										<div class="sel-td order">9</div>
+										<div class="sel-td name clearfix">
+											<div class="bit-img lf">
+												<img src="img/sample.png">
+											</div>
+											<span class="lf">EOS/USDT</span>
+										</div>
+										<div class="sel-td rate">-6.27%</div>
+										<div class="sel-td price"></div>
+										<div class="sel-td deal"></div>
+										<div class="sel-td act"></div>
+									</div>
+									<div class="sel-row">
+										<div class="sel-td order">10</div>
+										<div class="sel-td name clearfix">
+											<div class="bit-img lf">
+												<img src="img/sample.png">
+											</div>
+											<span class="lf">EOS/USDT</span>
+										</div>
+										<div class="sel-td rate">-6.27%</div>
+										<div class="sel-td price"></div>
+										<div class="sel-td deal"></div>
+										<div class="sel-td act"></div>
+									</div>
+								</div>
+								<!-- 底部搜索框及分页条 -->
+								<div class="sel-tf clearfix">
+									<div class="table-page rf">
+										<ul class="table-pager">
+											<li class="prev">
+												<a href="javascript:void(0)"></a>
+											</li>
+											<li class="active">
+												<a href="javascript:void(0)">1</a>
+											</li>
+											<li>
+												<a href="javascript:void(0)">2</a>
+											</li>
+											<li>
+												<a href="javascript:void(0)">3</a>
+											</li>
+											<li>
+												<a href="javascript:void(0)">4</a>
+											</li>
+											<li>
+												<a href="javascript:void(0)">5</a>
+											</li>
+											<li class="elli"><span>...</span></li>
+											<li>
+												<a href="javascript:void(0)">尾页</a>
+											</li>
+											<li class="next"><a href="javascript:void(0)"></a></li>
+										</ul>
+									</div>
+									<div class="sel-search rf">
+										<input class="txt" type="text" placeholder="搜索已关注币种">
+										<div class="icon"><i class="search"></i></div>
+									</div>
+									<!-- mobile端关闭图标 -->
+									<div class="close-box lf" id="closeBox">关闭弹窗</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--start mobile端币种右侧下拉框 -->
+					<div class="sel-mobile rf" id="mobileBox">
+						<div class="mobile-dropdown">
+							<div class="sel-dropname" data-sel="typeName">
+								<span class="type-name" data-default="kline" id="typeName">技术指标</span>
+								<i class="icondrop" data-icon="drop"></i>
+								<!-- <i class="icondrop icon-up" data-icon="drop"></i> -->
+							</div>
+							<!-- 下拉框 -->
+							<ul class="drop-box hide" data-show="typeList" id="typeList">
+								<li data-list="kline" class="on" data-listval="技术指标"><a href="javascript:void(0)">技术指标</a></li>
+								<li data-list="marketdata" data-listval="行情数据"><a href="javascript:void(0)">行情数据</a></li>
+								<li data-list="sellbuy" data-listval="买入卖出"><a href="javascript:void(0)">买入卖出</a></li>
+								<li data-list="myentrust" data-listval="我的委托"><a href="javascript:void(0)">我的委托</a></li>
+								<li data-list="dealstyle" data-listval="成交类型"><a href="javascript:void(0)">成交类型</a></li>
+							</ul>
+						</div>
+					</div>
+					<!--mobile端币种左侧下拉框 end -->
+					<div class="sel-right lf" id="priceRight">
+						<div class="price-box newest-price lf">
+							<span class="labe">最新成交价格</span>
+							<span class="num"><span class="int-num">6602</span>.1676 USDT / ￥40576.01</span>
+						</div>
+						<div class="price-box rate lf">
+							<span class="labe">涨跌幅</span>
+							<span class="num">+1.22%</span>
+						</div>
+						<div class="price-box highest-price lf">
+							<span class="labe">24h最高</span>
+							<span class="num">6,077.522700 USDT / ￥41327.15</span>
+						</div>
+						<div class="price-box lowest lf">
+							<span class="labe">24h最低</span>
+							<span class="num">5,740.139700 USDT / ￥39032.95</span>
+						</div>
+						<div class="price-box trad-volume lf">
+							<span class="labe">24h成交量</span>
+							<span class="num">245.67</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- 中间 -->
+			<div class="trading-bd clearfix">
+				<!-- 左侧 行情数据-->
+				<div class="trad-left" data-isshow="marketdata">
+					<div class="trad-table">
+						<div class="table-th">
+							<div class="row">
+								<div class="td">时间</div>
+								<div class="td">价格</div>
+								<div class="td">数量</div>
+							</div>
+						</div>
+						<div class="table-tb">
+							<div class="row">
+								<div class="td">14:03:52</div>
+								<div class="td add-price">5998.054800</div>
+								<div class="td">0.01840</div>
+							</div>
+							<div class="row">
+								<div class="td">14:03:52</div>
+								<div class="td minus-price">5998.054800</div>
+								<div class="td">0.01840</div>
+							</div>
+							<div class="row">
+								<div class="td">14:03:52</div>
+								<div class="td minus-price">5998.054800</div>
+								<div class="td">0.01840</div>
+							</div>
+							<div class="row">
+								<div class="td">14:03:52</div>
+								<div class="td minus-price">5998.054800</div>
+								<div class="td">0.01840</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="trad-center">
+					<!-- k线图 -->
+					<div class="trad-ct" data-isshow="kline"></div>
+					<!-- 买入卖出 -->
+					<div class="trad-cb" data-isshow="sellbuy">
+						<!--start 买入卖出mobile端下拉框 -->
+						<div class="tradcb-hd" id="tradcbHd">
+							<div class="defaultcb">
+								<div class="defaultcb-name" id="defaultCb">
+									<span class="sellbuy-name" data-tradefault="buy" id="tradFault">买入</span>
+									<i class="icondrop" data-icon="drop"></i>
+									<!-- <i class="icondrop icon-up" data-icon="drop"></i> -->
+								</div>
+								<ul class="defaultcb-ul hide" id="defaultcbUL">
+									<li class="on" data-cb="buy" data-cbval="买入"><a href="javascript:void(0)">买入</a></li>
+									<li data-cb="sell" data-cbval="卖出"><a href="javascript:void(0)">卖出</a></li>
+								</ul>
+							</div>
+						</div>
+						<!--买入卖出mobile端下拉框 end-->
+						<div class="act-box clearfix">
+							<!-- 买入 -->
+							<div class="act-block act-left" data-buysell="buy">
+								<div class="act-trad">
+									<form id="buyForm">
+										<div class="act-title">
+											<span>可用: 0 USDT</span>
+											<span>可买：BTC</span>
+										</div>
+										<div class="act-content">
+											<div class="input-txt">
+												<label class="label">买入价</label>
+												<input type="text" class="txt" placeholder="5998.054800">
+												<span class="unit">USDT</span>
+											</div>
+											<div class="input-txt">
+												<label class="label">买入量</label>
+												<input type="text" class="txt" placeholder="0">
+												<span class="unit">BTC</span>
+											</div>
+											<div class="progress">
+												<ul class="clearfix">
+													<li>25%</li>
+													<li>50%</li>
+													<li>75%</li>
+													<li>100%</li>
+												</ul>
+											</div>
+											<div class="input-txt yuji">
+												<label class="label">预计交易额</label>
+												<input type="text" class="txt">
+												<span class="unit">USDT</span>
+											</div>
+											<div class="input-btn">
+												<a href="javascript:void(0)">买入</a>
+											</div>
+										</div>
+									</form>
+								</div>
+							</div>
+							<!-- 卖出 -->
+							<div class="act-block act-right" data-buysell="sell">
+								<div class="act-trad">
+									<form id="sellForm">
+										<div class="act-title">
+											<span>可用: 0 USDT</span>
+											<span>可卖：BTC</span>
+										</div>
+										<div class="act-content">
+											<div class="input-txt">
+												<label class="label">卖出价</label>
+												<input type="text" class="txt" placeholder="5998.054800">
+												<span class="unit">USDT</span>
+											</div>
+											<div class="input-txt">
+												<label class="label">卖出量</label>
+												<input type="text" class="txt" placeholder="0">
+												<span class="unit">BTC</span>
+											</div>
+											<div class="progress">
+												<ul class="clearfix">
+													<li>25%</li>
+													<li>50%</li>
+													<li>75%</li>
+													<li>100%</li>
+												</ul>
+											</div>
+											<div class="input-txt yuji">
+												<label class="label">预计交易额</label>
+												<input type="text" class="txt">
+												<span class="unit">USDT</span>
+											</div>
+											<div class="input-btn">
+												<a href="javascript:void(0)">卖出</a>
+											</div>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- 我的委托 成交类型 -->
+					<div class="trad-deal">
+						<div class="deal-hd">
+							<a href="javascript:void(0)" class="active" data-tabtra="weituo">我的委托</a>
+							<a href="javascript:void(0)" data-tabtra="dealType">成交类型</a>
+						</div>
+						<div class="deal-bd">
+							<!-- 我的委托 -->
+							<div class="weituo" data-show="weituo" data-isshow="myentrust">
+								<div class="deal-table">
+									<div class="deal-th">
+										<div class="deal-tr">
+											<div class="deal-td time">委托时间</div>
+											<div class="deal-td type">买入/卖出</div>
+											<div class="deal-td price">委托价格</div>
+											<div class="deal-td num">挂单数量丨已成交</div>
+											<div class="deal-td dealprice">成交金额</div>
+											<div class="deal-td act">操作</div>
+										</div>
+									</div>
+									<div class="deal-tb">
+										<!-- 无数据 -->
+										<div class="nodata">
+											<div class="img">
+												<img src="img/nodata2.png" alt="无数据">
+											</div>
+											<div class="nodata-txt">暂无记录</div>
+										</div>
+										<!-- 有数据 -->
+										<!-- <div class="deal-tr">
+											<div class="deal-td time">委托时间</div>
+											<div class="deal-td type">买入/卖出</div>
+											<div class="deal-td price">委托价格</div>
+											<div class="deal-td num">挂单数量丨已成交</div>
+											<div class="deal-td dealprice">成交金额</div>
+											<div class="deal-td act">操作</div>
+										</div> -->
+									</div>
+								</div>
+							</div>
+							<!-- 成交类型 -->
+							<div class="deal-type hide" data-show="dealType" data-isshow="dealstyle">
+								<div class="deal-table">
+									<div class="deal-th">
+										<div class="deal-tr">
+											<div class="deal-td time">成交时间</div>
+											<div class="deal-td type">买入/卖出</div>
+											<div class="deal-td price">成交价格</div>
+											<div class="deal-td num">成交数量</div>
+											<div class="deal-td dealprice">成交金额</div>
+										</div>
+									</div>
+									<div class="deal-tb">
+										<!-- 无数据 -->
+										<!-- <div class="nodata">
+											<div class="img">
+												<img src="img/nodata2.png" alt="无数据">
+											</div>
+											<div class="nodata-txt">暂无记录</div>
+										</div> -->
+										<!-- 有数据 -->
+										<div class="deal-tr">
+											<div class="deal-td time">成交时间</div>
+											<div class="deal-td type">买入/卖出</div>
+											<div class="deal-td price">成交价格</div>
+											<div class="deal-td num">成交数量</div>
+											<div class="deal-td dealprice">成交金额</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- 右侧 行情数据-->
+				<div class="trad-right" data-isshow="marketdata">
+					<!-- 卖 -->
+					<div class="trad-rt">
+						<div class="trad-table">
+							<div class="table-th">
+								<div class="row">
+									<div class="td">卖</div>
+									<div class="td">价格</div>
+									<div class="td">数量</div>
+								</div>
+							</div>
+							<div class="table-tb">
+								<div class="row">
+									<div class="td">卖10</div>
+									<div class="td add-price">5998.054800</div>
+									<div class="td">0.01840</div>
+								</div>
+								<div class="row">
+									<div class="td">卖9</div>
+									<div class="td minus-price">5998.054800</div>
+									<div class="td">0.01840</div>
+								</div>
+								<div class="row">
+									<div class="td">卖8</div>
+									<div class="td minus-price">5998.054800</div>
+									<div class="td">0.01840</div>
+								</div>
+								<div class="row">
+									<div class="td">卖7</div>
+									<div class="td minus-price">5998.054800</div>
+									<div class="td">0.01840</div>
+								</div>
+								<div class="row">
+									<div class="td">卖7</div>
+									<div class="td minus-price">5998.054800</div>
+									<div class="td">0.01840</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- 买 -->
+					<div class="trad-rb">
+						<div class="trad-table">
+							<div class="table-th">
+								<div class="row">
+									<div class="td">买</div>
+									<div class="td">价格</div>
+									<div class="td">数量</div>
+								</div>
+							</div>
+							<div class="table-tb">
+								<div class="row">
+									<div class="td">买10</div>
+									<div class="td add-price">5998.054800</div>
+									<div class="td">0.01840</div>
+								</div>
+								<div class="row">
+									<div class="td">买9</div>
+									<div class="td minus-price">5998.054800</div>
+									<div class="td">0.01840</div>
+								</div>
+								<div class="row">
+									<div class="td">买8</div>
+									<div class="td minus-price">5998.054800</div>
+									<div class="td">0.01840</div>
+								</div>
+								<div class="row">
+									<div class="td">买7</div>
+									<div class="td minus-price">5998.054800</div>
+									<div class="td">0.01840</div>
+								</div>
+								<div class="row">
+									<div class="td">买7</div>
+									<div class="td minus-price">5998.054800</div>
+									<div class="td">0.01840</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		@@include('footer.html')
+	</div>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/base.js?rev=@@hash"></script>
+	<script>
+		$(function(){
+			//左侧币种下拉框点击效果
+			$('[data-sel="bitname"]').on("click",function(){
+				var dropList=$(this).siblings('[data-show="droplist"]'); //币种下拉列表
+				var slideright=$('[data-show="slideright"]');  //关注的右侧列表
+				var isListShow=dropList.hasClass("hide");
+				var dropIcon=$(this).find('[data-icon="drop"]');  //图标
+				dropList.toggleClass("hide");
+				dropIcon.toggleClass("icon-up");
+				if(!isListShow){  //下拉列表收起状态，右侧数据列表也收起
+					slideright.addClass("hide");
+				}
+			});
+			$('[data-sel="other"]').on("click",function(){
+				$('[data-show="slideright"]').toggleClass("hide");
+			});
+
+			// 我的委托  成交类型 标签页切换
+			$("[data-tabtra]").on("click",function(){
+				var elem=$(this).data("tabtra");
+				$(this).addClass("active").siblings().removeClass("active");
+				$("[data-show='"+elem+"']").css("cssText","display:block !important").siblings().css("cssText","display:none !important");
+			});
+
+			/**
+			* mobile端各模块显示效果
+			*/
+			//mobile端左侧点击展示下拉框
+			$('#mobileBox [data-sel="typeName"]').on("click",function(){
+				var dropList=$(this).siblings('[data-show="typeList"]'); //显示类别下拉列表
+				var isListShow=dropList.hasClass("hide");
+				var dropIcon=$(this).find('[data-icon="drop"]');  //图标
+				dropList.toggleClass("hide");
+				dropIcon.toggleClass("icon-up");
+			});
+			//mobile端各模块显示 默认只显示k线图
+			// 点击下拉框 展示对应div内容
+			$('#typeList').on("click","li",function(){
+				$(this).addClass("on").siblings().removeClass("on"); //点击选项添加类on
+				var defaultShowElm=$(this).data("list");  //要展示的模块元素
+				var defaultShowVal=$(this).data("listval"); //要展示的模块名
+
+				$("#typeName").attr("data-default",defaultShowElm);
+				$("#typeName").text(defaultShowVal);//更改默认显示的data-default的值
+				$(this).parent().addClass("hide");  //点击后隐藏下拉框
+				//隐藏价格数据 买入卖出/我的委托/成交类型
+				if(defaultShowElm=="sellbuy"){
+					$('#tradcbHd').show();  //买入卖出下拉框
+					$('#priceRight').addClass("hide");
+				}else if(defaultShowElm=="myentrust" || defaultShowElm=="dealstyle"){
+					$('#priceRight').addClass("hide");
+					$('#tradcbHd').hide();
+				}else{
+					$('#priceRight').removeClass("hide");
+					$('#tradcbHd').hide();
+				}
+				//显示对应div模块元素
+				$('[data-isshow]').each(function(i){
+					var willShow=$(this).data("isshow");
+					if(willShow==defaultShowElm){
+						$(this).show();
+					}else{
+						$(this).hide();
+					}
+				});
+				//更改下拉框右侧小图标
+				$('#mobileBox [data-sel="typeName"] [data-icon="drop"]').removeClass("icon-up");
+			});
+
+			//买入卖出下拉框 显示隐藏
+			$('#defaultCb').on("click",function(){
+				$('#defaultcbUL').toggleClass("hide");
+				var dropIcon=$(this).find('[data-icon="drop"]');  //图标
+				var isShow=$('#defaultcbUL').hasClass("hide");
+				if(!isShow){
+					dropIcon.addClass("icon-up");
+				}else{
+					dropIcon.removeClass("icon-up");
+				}
+			});
+			//买入卖出下拉框 点击效果
+			$('#defaultcbUL').on("click",'li',function(){
+				var defaultEle=$(this).data("cb");
+				var defaultVal=$(this).data("cbval");
+				$("#tradFault").text(defaultVal);
+				$("#tradFault").attr("data-tradefault",defaultEle);
+				$('#defaultcbUL').addClass("hide");
+				$('#defaultCb [data-icon="drop"]').removeClass("icon-up");
+
+				$('[data-buysell]').each(function(j){
+					var buysellVal=$(this).data("buysell");
+					if(defaultEle==buysellVal){
+						$(this).show();
+					}else{
+						$(this).hide();
+					}
+				});
+			});
+			//mobile端 左侧二级菜单显示隐藏
+			$("#closeBox").click(function(){
+				$("#secondNav").toggleClass("hide");
+			});
+
+		});
+	</script>
+</body>
+</html>

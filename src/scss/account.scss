@@ -1,0 +1,386 @@
+.account-box{
+	background-color:#393939;
+	.account-content{
+		color:$siteColor;
+		font-weight:400;
+	    padding-bottom: 50px;
+		.acc-title{
+			font-size:32px;
+			height:80px;
+			line-height: 80px;
+		}
+		.acc-tip{
+			font-size:16px;
+			height:40px;
+			line-height: 40px;
+		    margin-top: 20px;
+		}
+		.acc-name{
+			width:100%;
+			height:60px;
+			line-height:60px;
+			margin-bottom: 15px;
+			.name-lf{
+				height:60px;
+				.name{
+					color:#fff;
+					font-size:24px;
+					font-weight:400;
+					padding-right:15px;
+				}
+				.verify{
+					color:#5a5a5a;
+					font-size:16px;
+					font-weight:400;
+					&:hover{
+						color:$siteColor;
+					};
+				}
+			}
+			.ip-rf{
+				color:$siteColor;
+				font-size:16px;
+				font-weight:400;
+				.ip{
+					text-align:right;
+					padding-left:100px;
+				}
+			}
+		}
+		.acc-email{
+			color:$siteColor;
+			font-size:16px;
+			font-weight:400;
+			height:40px;
+			line-height:40px;
+		}
+	}
+}
+.safe-box{
+	background-color:#272727;
+	.safe-content{
+		color:$siteColor;
+		font-weight:400;
+		padding:35px 0;
+		.safe-title{
+			font-size:16px;
+			height:30px;
+			line-height:30px;
+		}
+		.settings{
+			width:100%;
+			margin:30px 0 100px;
+			.set-box{
+				width:32%;
+				margin-right:2%;
+				background-color:#1b1d1e;
+				.box{
+					padding-top:30px;
+					padding-bottom:25px;
+				    background-color: #1b1d1e;
+				    text-align:center;
+				    .img{
+				    	width:110px;
+				    	height:70px;
+				    	margin:0 auto;
+				    	margin-bottom: 25px;
+				    	.pwd-img{
+							width:101px;
+							height:52px;
+				    	}
+				    	.api-img{
+				    		width:90px;
+							height:66px;
+				    	}
+				    	.google-img{
+				    		width:100px;
+							height:63px;
+				    	}
+				    }
+				    .tip{
+						height:40px;
+						line-height:40px;
+						color:#fff;
+						font-size:16px;
+						font-weight:400;
+					}
+					.pat{
+						color:$siteColor;
+						font-size:14px;
+						height:40px;
+						line-height:40px;
+						margin:25px 0 20px;
+						.light{
+							color:#5a5a5a;
+							font-size:14px;
+							display:block;
+						}
+						&.api-pat{
+							line-height:15px;
+						}
+					}
+					.btn{
+						width:50%;
+						margin:0 auto;
+						.button{
+							display:block;
+							width:100%;
+							height:45px;
+							line-height:45px;
+							text-align:center;
+							color:#fff;
+							font-size:16px;
+							font-weight:400;
+							background-color:$siteColor;
+							&:hover{
+								background-color:rgb(181,148,110);
+							};
+						}
+					}
+				}
+				&.google{
+					margin-right:0;
+				}
+			}
+		}
+		.mobile-settings{
+			display:none;
+		}
+		.login-ip{
+		    margin-bottom: 20px;
+			.table{
+				.row{
+					height:40px;
+					&:after{
+						@include clearfix;
+					};
+					.td{
+						font-size:16px;
+						font-weight:400;
+						color:#fff;
+						width:23.3%;
+						float:left;
+						text-align: center;
+						height:40px;
+						line-height: 40px;
+					}
+					.time{
+						text-align:left;
+					}
+					.ip{
+						width:53.3%;
+					}
+					.status{
+						width:23.3%;
+					}
+				}
+				.row-hd{
+					.row{
+						.td{
+							color:$siteColor;
+						}
+					}
+				}
+				.row-bd{
+					margin-bottom:20px;
+					.row{
+						.ip{
+							.addr:before{
+								content:"";
+								display:inline-block;
+								background-image: url(./../img/location.png?__spriter);
+								/*background-size: 12px 18px;*/
+								width:12px;
+								height:18px;
+							    vertical-align: -4px;
+    							margin-right: 5px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+@media only screen and(max-width:768px){
+	.account-box{
+		padding-top:60px;
+		background-color:#272727;
+		.account-content{
+			width:95%;
+			margin:0 auto;
+			padding-bottom: 20px;
+			.acc-title{
+			    height: 60px;
+    			line-height: 60px;
+			}
+			.acc-tip{
+				display:none;
+			}
+			.acc-name{
+				line-height: 1;
+				margin-bottom:0;
+				height:auto;
+				.name-lf{
+					height:auto;
+					padding:10px 0;
+				    width: 100%;
+				}
+				.ip-rf{
+					float:left;
+					width:100%;
+				    padding: 10px 0;
+				    font-size:14px;
+			        line-height: 1.5;
+					.time{
+					    width: 100%;
+				        padding: 10px 0;
+					}
+					.ip{
+						float: left;
+					    width: 100%;
+					    text-align: left;
+				        padding: 10px 0;
+					}
+				}
+			}
+		}
+	}
+	.safe-box{
+		.safe-content{
+			width:95%;
+			margin:0 auto;
+			padding-top:0;
+			.safe-title{
+				font-size:20px;
+			}
+			.pc-settings{
+				display:none;
+			}
+			.mobile-settings{
+				display:block;
+			    margin-bottom: 30px;
+			}
+			.settings{
+				.set-box{
+					width:100%;
+				    margin-right: 0;
+				}
+				.swiper-button-next, .swiper-container-rtl .swiper-button-prev{
+					outline:none;
+				}
+				.swiper-button-prev{
+					background-image: url(../img/mobile/arrow_left.png);
+    				background-size: 45px 37px;
+    				width: 45px;
+				}
+				.swiper-button-next{
+				    background-image: url(../img/mobile/arrow_right.png);
+    				background-size: 45px 36px;
+    				width: 45px;
+				}
+			}
+			.login-ip{
+				.table{
+					.row-hd{
+						.row{
+							.td{
+								font-size:14px;
+							}
+						}
+					}
+					.row{
+						height:auto;
+						.td{
+							height:auto;
+							padding:10px 0;
+							line-height: 1;
+						    font-size: 12px;
+					        padding-left: 5px;
+						}
+					}
+					.row-bd .row .ip .addr:before{
+						display:none;
+					}
+				}
+			}
+
+		}
+	}
+	.popup{
+		width:95%;
+	}
+	.popup{
+		&.google-verify{
+			.pop-box{
+				.pop-title{
+					height: 45px;
+	    			line-height: 45px;
+	    			.close{
+					    padding: 15px 0;
+	    			}
+				}
+			}
+			.pop-content{
+				padding: 15px 0;
+				.pop-step{
+					.step-text{
+						height:auto;
+						line-height:1.5;
+						.round{
+						    width: 30px;
+						    height: 30px;
+						    line-height: 30px;
+						    margin-right: 5px;
+						}
+						.title{
+						    padding: 5px 0;
+						    font-size:14px;
+					        width: calc(100% - 35px);
+						}
+					}
+					.step-content{
+					    width: 95%;
+	    				margin: 0 auto;
+	    				padding-left:0;
+	    				.download-img{
+	    					margin:0;
+						    width: 170px;
+					        margin-left: 10%;
+	    				}
+	    				.qrimg{
+						    margin-left: 10%;
+						    margin-right: 0;
+						    margin-bottom: 0;
+					        width: 120px;
+    						height: 120px;
+	    				}
+	    				.step-tip{
+					        width: 36%;
+						    margin: 0;
+						    margin-left: 5%;
+	    				}
+					}
+				}
+				.google-veri{
+				    padding-left: 0;
+				    margin-left: 10%;
+				    width: 90%;
+				}
+				.pop-button{
+				    width: 50%;
+    				margin: 0 auto;
+				}
+				.pop-input{
+				    margin-bottom: 15px;
+				}
+			}
+		}
+	}
+}
+@media only screen and (max-width:319px){
+	.account-box{
+		padding-top:120px;
+	    background: #393939;
+	}
+}

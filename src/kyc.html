@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>DTP</title>
+	<meta name="Keywords" content="DTP">
+	<meta name="Description" content="DTP是专业的数字货币交易网，数字资产交易平台，专注数字货币分发和维持数字资产撮合数字虚拟货币交易为核心，构建安全便捷的数字货币交易平台.">
+   	<meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta content="telephone=no" name="format-detection">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+	<link rel="stylesheet" href="./css/all.css?rev=@@hash">
+</head>
+<body>
+	<div class="max-box">
+		@@include('header.html')
+		<!-- 历史 -->
+		<div class="history kyc">
+			<div class="history-top">
+				<div class="width-limit">
+					<div class="history-title clearfix">
+						<div class="return lf">
+							<img src="img/return.png" alt="返回上一页">
+						</div>
+						<h2 class="lf">身份验证</h2>
+					</div>
+				</div>
+			</div>
+			<div class="kyc-tab">
+				<div class="width-limit">
+					<div class="tab-box clearfix">
+						<a href="javascript:void(0)" class="tab active" data-tab="passport">护照</a>
+						<a href="javascript:void(0)" class="tab" data-tab="id">身份证</a>
+					</div>
+				</div>
+			</div>
+			<div class="kyc-box">
+				<div class="width-limit">
+					<div class="passport" data-show="passport">
+						<div class="kyc-content">
+							<div class="kyc-title">请确认使用您的真实身份参加验证</div>
+							<div class="kyc-input">
+								<label class="label">国家/地区</label>
+								<input class="txt" type="text" placeholder="请选择您的国家/地区">
+								<div class="drop">
+									<i class="drop-icon"></i>
+								</div>
+								<ul class="location-list">
+									<li>中国</li>
+									<li>中国</li>
+									<li>中国</li>
+									<li>中国</li>
+									<li>中国</li>
+									<li>中国</li>
+									<li>中国</li>
+									<li>中国</li>
+								</ul>
+							</div>
+							<div class="kyc-input clearfix">
+								<div class="inpt-left lf">
+									<label class="label">名</label>
+									<input class="txt" type="text" placeholder="名">
+								</div>
+								<div class="inpt-right rf">
+									<label class="label">姓</label>
+									<input class="txt" type="text" placeholder="名">
+								</div>
+							</div>
+							<div class="kyc-input">
+								<label class="label">护照</label>
+								<input class="txt" type="text" placeholder="护照">
+							</div>
+							<div class="kyc-upload">
+								<label class="label">护照封面</label>
+								<div class="up-content clearfix">
+									<div class="upload-wrap lf">
+										<div class="up-pat">
+											<div class="up-img">
+												<i class="up-icon"></i>
+											</div>
+											<div class="tip">上传护照封面</div>
+										</div>
+										<input type="file" class="up-file">
+										<div class="output"></div>
+									</div>
+									<div class="example-img lf">
+										<img src="img/passport-country.png" alt="passport-country" class="country">
+									</div>
+									<div class="pass-tip lf">为方便审核，请上传清晰的照片</div>
+								</div>
+							</div>
+							<div class="kyc-upload">
+								<label class="label">护照信息页</label>
+								<div class="up-content clearfix">
+									<div class="upload-wrap lf">
+										<div class="up-pat">
+											<div class="up-img">
+												<i class="up-icon"></i>
+											</div>
+											<div class="tip">上传护照信息页</div>
+										</div>
+										<input type="file" class="up-file">
+										<div class="output"></div>
+									</div>
+									<div class="example-img lf">
+										<img src="img/passport-info.png" alt="passport-info" class="info">
+									</div>
+									<div class="pass-tip lf">为方便审核，请上传清晰的照片</div>
+								</div>
+							</div>
+							<div class="kyc-upload">
+								<label class="label">手持护照</label>
+								<div class="up-content clearfix">
+									<div class="upload-wrap lf">
+										<div class="up-pat">
+											<div class="up-img">
+												<i class="up-icon"></i>
+											</div>
+											<div class="tip">上传手持护照信息和个人签名</div>
+										</div>
+										<input type="file" class="up-file">
+										<div class="output"></div>
+									</div>
+									<div class="example-img lf">
+										<img src="img/take-passport.png" alt="take-passport" class="take">
+									</div>
+									<div class="pass-tip lf stan-tip">
+										<dl>
+											<dt>手持护照通过标准：</dt>
+											<dd>人物头像清晰；</dd>
+											<dd>护照信息清晰；</dd>
+											<dd>包含FCoin字样+申请日期；</dd>
+											<dd>完整展示手臂持证</dd>
+										</dl>
+									</div>
+								</div>
+							</div>
+							<div class="kyc-button">
+								<input type="button" value="提交" class="inpt-btn">
+							</div>
+						</div>
+					</div>
+					<div class="id hide" data-show="id">
+						<div class="kyc-content">
+							<div class="kyc-title">请确认使用您的真实身份参加验证</div>
+							<div class="kyc-input">
+								<label class="label">省份/市县</label>
+								<input class="txt" type="text" placeholder="请选择您的省份/市县">
+								<div class="drop">
+									<i class="drop-icon"></i>
+								</div>
+								<ul class="location-list">
+									<li>湖北省</li>
+									<li>湖北省</li>
+									<li>湖北省</li>
+									<li>湖北省</li>
+									<li>湖北省</li>
+									<li>湖北省</li>
+									<li>湖北省</li>
+									<li>湖北省</li>
+								</ul>
+							</div>
+							<div class="kyc-input clearfix">
+								<div class="inpt-left lf">
+									<label class="label">名</label>
+									<input class="txt" type="text" placeholder="名">
+								</div>
+								<div class="inpt-right rf">
+									<label class="label">姓</label>
+									<input class="txt" type="text" placeholder="名">
+								</div>
+							</div>
+							<div class="kyc-input">
+								<label class="label">身份证号码</label>
+								<input class="txt" type="text" placeholder="身份证号码">
+							</div>
+							<div class="kyc-upload">
+								<label class="label">身份证正面</label>
+								<div class="up-content clearfix">
+									<div class="upload-wrap lf">
+										<div class="up-pat">
+											<div class="up-img">
+												<i class="up-icon"></i>
+											</div>
+											<div class="tip">上传身份证正面</div>
+										</div>
+										<input type="file" class="up-file">
+										<!-- 上传图片缩略图显示 -->
+										<div class="output"></div>
+									</div>
+									<div class="example-img lf">
+										<img src="img/id-reverse.png" alt="id-reverse" class="id-reverse">
+									</div>
+									<div class="pass-tip lf">为方便审核，请上传清晰的照片</div>
+								</div>
+							</div>
+							<div class="kyc-upload">
+								<label class="label">身份证反面</label>
+								<div class="up-content clearfix">
+									<div class="upload-wrap lf">
+										<div class="up-pat">
+											<div class="up-img">
+												<i class="up-icon"></i>
+											</div>
+											<div class="tip">上传身份证反面</div>
+										</div>
+										<input type="file" class="up-file">
+										<div class="output"></div>
+									</div>
+									<div class="example-img lf">
+										<img src="img/passport-info.png" alt="passport-info" class="info">
+									</div>
+									<div class="pass-tip lf">为方便审核，请上传清晰的照片</div>
+								</div>
+							</div>
+							<div class="kyc-upload">
+								<label class="label">手持身份证合照</label>
+								<div class="up-content clearfix">
+									<div class="upload-wrap lf">
+										<div class="up-pat">
+											<div class="up-img">
+												<i class="up-icon"></i>
+											</div>
+											<div class="tip">上传手持身份证合照</div>
+										</div>
+										<input type="file" class="up-file">
+										<div class="output"></div>
+									</div>
+									<div class="example-img lf">
+										<img src="img/take-id.png" alt="take-id" class="take-id">
+									</div>
+									<div class="pass-tip lf stan-tip">
+										<dl>
+											<dt>手持身份证通过标准：</dt>
+											<dd>人物头像清晰；</dd>
+											<dd>身份证信息清晰；</dd>
+											<dd>完整展示手臂持证；</dd>
+											<dd>提交</dd>
+										</dl>
+									</div>
+								</div>
+							</div>
+							<div class="kyc-button">
+								<input type="button" value="提交" class="inpt-btn">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		@@include('footer.html')
+	</div>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/base.js?rev=@@hash"></script>
+	<script>
+		//上传的图片显示到缩略窗口
+		var files=document.getElementsByClassName("up-file");
+		for(let i=0;i<files.length;i++){
+			var file=files[i];
+			loadImage(file);
+		}
+		function loadImage(file){
+			file.addEventListener('change', function(){
+				var fileInfo=this.files[0];
+				var reader=new FileReader();
+				console.log(fileInfo);
+				if(/image/.test(fileInfo.type)){  //如果上传的是图片
+	    			reader.readAsDataURL(fileInfo);
+	    		}
+	    		reader.onload=function(){
+    				var info=reader.result;
+    				var output=file.nextElementSibling;
+    				output.style.cssText='background-image:url('+info+');background-size:cover;background-position:center;background-color:#fff;z-index:2;';
+    			}
+			})
+		}
+
+		//国家地区 下拉列表显示
+		
+	</script>
+</body>
+</html>

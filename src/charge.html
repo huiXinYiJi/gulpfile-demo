@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>DTP</title>
+	<meta name="Keywords" content="DTP">
+	<meta name="Description" content="DTP是专业的数字货币交易网，数字资产交易平台，专注数字货币分发和维持数字资产撮合数字虚拟货币交易为核心，构建安全便捷的数字货币交易平台.">
+   	<meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta content="telephone=no" name="format-detection">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+	<link rel="stylesheet" href="./css/all.css?rev=@@hash">
+</head>
+<body>
+	<div class="max-box">
+		@@include('header.html')
+		<!-- 历史 -->
+		<div class="history charge-history">
+			<div class="history-top">
+				<div class="width-limit">
+					<div class="history-title clearfix">
+						<div class="return lf">
+							<img src="img/return.png" alt="返回上一页">
+						</div>
+						<h2 class="lf">充值历史</h2>
+					</div>
+				</div>
+			</div>
+			<div class="history-content">
+				<div class="width-limit">
+					<div class="history-table">
+						<div class="his-th">
+							<div class="row clearfix">
+								<div class="td time">时间</div>
+								<div class="td type">币种</div>
+								<div class="td num">数量</div>
+								<div class="td addr">地址</div>
+								<div class="td status">状态</div>
+							</div>
+						</div>
+						<div class="his-tb">
+							<!-- 没有数据 -->
+							<div class="nodata">
+								<div class="img">
+									<img src="img/nodata.png" alt="无数据">
+								</div>
+								<div class="nodata-txt">无数据</div>
+							</div>
+							<!-- 有数据 -->
+							<!-- <div class="row clearfix">
+								<div class="td time">2018-05-19</div>
+								<div class="td type">BTC</div>
+								<div class="td num">1000</div>
+								<div class="td addr">地址</div>
+								<div class="td status">状态</div>
+							</div>
+							<div class="row clearfix">
+								<div class="td time">2018-05-19</div>
+								<div class="td type">BTC</div>
+								<div class="td num">1000</div>
+								<div class="td addr">地址</div>
+								<div class="td status">状态</div>
+							</div> -->
+						</div>
+						<!-- 分页条 -->
+						<div class="table-page clearfix">
+							<ul class="table-pager">
+								<li class="prev">
+									<a href="javascript:void(0)"></a>
+								</li>
+								<li class="active">
+									<a href="javascript:void(0)">1</a>
+								</li>
+								<li>
+									<a href="javascript:void(0)">2</a>
+								</li>
+								<li>
+									<a href="javascript:void(0)">3</a>
+								</li>
+								<li>
+									<a href="javascript:void(0)">4</a>
+								</li>
+								<li>
+									<a href="javascript:void(0)">5</a>
+								</li>
+								<li class="elli"><span>...</span></li>
+								<li>
+									<a href="javascript:void(0)">尾页</a>
+								</li>
+								<li class="next"><a href="javascript:void(0)"></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		@@include('footer.html')
+	</div>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/base.js?rev=@@hash"></script>
+</body>
+</html>

@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>DTP</title>
+	<meta name="Keywords" content="DTP">
+	<meta name="Description" content="DTP是专业的数字货币交易网，数字资产交易平台，专注数字货币分发和维持数字资产撮合数字虚拟货币交易为核心，构建安全便捷的数字货币交易平台.">
+   	<meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta content="telephone=no" name="format-detection">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+	<link rel="stylesheet" href="./css/all.css?rev=8b0321f6b547b0220bd0f8accde37e40">
+</head>
+<body>
+	<div class="max-box">
+		<!-- 头部 -->
+		<div class="header">
+			<div class="width-limit">
+				<div class="header-box clearfix">
+					<div  class="logo-box lf">
+						<a href="/">
+							<img src="img/site-logo-1.png" alt="DTP">
+						</a>
+					</div>
+					<div class="nav-box rf">
+						<ul class="clearfix">
+							<li  class="nav-list">
+								<a href="./">
+									<span class="text-cn">首页</span>
+									<!-- <span class="text-en">HOME</span> -->
+								</a>
+							</li>
+							<li  class="nav-list">
+								<a href="./trading.html">
+									<span class="text-cn">交易中心</span>
+									<!-- <span class="text-en">TRADING CENTER</span> -->
+								</a>
+							</li>
+							<li  class="nav-list">
+								<a href="./news.html">
+									<span class="text-cn">新闻资讯</span>
+									<!-- <span class="text-en">NEWS</span> -->
+								</a>
+							</li>
+							<li  class="nav-list" data-log="unLogin">
+								<a href="./login.html">
+									<span class="text-cn">登录</span>
+									<!-- <span class="text-en">LOG IN</span> -->
+								</a>
+							</li>
+							<li  class="nav-list" data-log="unLogin">
+								<a href="./register.html">
+									<span class="text-cn">注册</span>
+									<!-- <span class="text-en">REGISTER</span> -->
+								</a>
+							</li>
+							<li  class="nav-list hide" data-log="logined" id="userInfo">
+								<a href="javascript:void(0)" class="userinfo">
+									<i class="user-icon"></i>
+									<span class="username">paly_so</span>
+								</a>
+							</li>
+							<li class="nav-list lang" id="navList">
+								<i class="current-lang lang-status lang-ch"></i>
+								<ul class="lang-list" id="langList">
+									<li class="lang-status lang-ch">
+										<a href="javascript:void(0)">简体中文</a>
+									</li>
+									<li class="lang-status lang-en">
+										<a href="javascript:void(0)">英文</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<!--点击用户名显示的 右侧菜单 -->
+			<div class="right-nav" id="rightNav">
+				<div class="right-top">
+					<div class="sec-nav finance">
+						<a href="/personal.html">
+							<i class="finance-icon icon"></i>
+							<span class="nav-name">资产</span>
+						</a>
+					</div>
+					<div class="sec-nav caiwu">
+						<a href="/finance.html">
+							<i class="caiwu-icon icon"></i>
+							<span class="nav-name">财务历史</span>
+						</a>
+					</div>
+					<div class="sec-nav settings">
+						<a href="/account.html">
+							<i class="set-icon icon"></i>
+							<span class="nav-name">账户</span>
+						</a>
+					</div>
+				</div>
+				<div class="right-bottom">
+					<div class="sec-nav logout">
+						<a href="javascript:void(0)">
+							<i class="logout-icon icon"></i>
+							<span class="nav-name">安全退出</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 历史 -->
+		<div class="history fina-history clearfix">
+			<div class="history-top">
+				<div class="width-limit">
+					<div class="history-title clearfix">
+						<h2 class="lf">财务明细</h2>
+					</div>
+				</div>
+			</div>
+			<div class="history-tab">
+				<div class="width-limit">
+					<div class="tab-box clearfix finance-tab">
+						<a href="javascript:void(0)" class="active" data-tab="chongzhi">充值提现</a>
+						<a href="javascript:void(0)" data-tab="chengjiao">成交历史</a>
+					</div>
+					<!--start mobile端tab下拉框 -->
+					<div class="self-select finance-select">
+						<div class="select">
+							<div class="selected" data-select="selected">
+								<div class="tab" data-selectval="chongzhi">充值提现</div>
+								<i class="icondrop" data-icon="drop"></i>
+								<!-- <i class="icondrop icon-up"></i> -->
+							</div>
+							<ul class="optionlist hide" data-select="ul">
+								<li class="option" data-select="option" data-val="chongzhi" data-text="充值提现">充值提现</li>
+								<li class="option" data-select="option" data-val="chengjiao" data-text="成交历史">成交历史</li>
+							</ul>
+						</div>
+					</div>
+					<!-- mobile端tab下拉框 end-->
+				</div>
+			</div>
+			<div class="history-content">
+				<div class="width-limit">
+					<!-- 充值提现 -->
+					<div data-showopt="chongzhi" class="chognzhi">
+						<div class="history-table">
+							<div class="his-th">
+								<div class="row clearfix">
+									<div class="td time">时间</div>
+									<div class="td style">类型</div>
+									<div class="td type">币种</div>
+									<div class="td num">数量</div>
+								</div>
+							</div>
+							<div class="his-tb">
+								<!-- 没有数据 -->
+								<!-- <div class="nodata">
+									<div class="img">
+										<img src="img/nodata.png" alt="无数据">
+									</div>
+									<div class="nodata-txt">无数据</div>
+								</div> -->
+								<!-- 有数据 -->
+								<div class="row clearfix">
+									<div class="td time">时间</div>
+									<div class="td style">类型</div>
+									<div class="td type">币种</div>
+									<div class="td num">数量</div>
+								</div>
+							</div>
+							<!-- 分页条 -->
+							<div class="table-page clearfix">
+								<ul class="table-pager">
+									<li class="prev">
+										<a href="javascript:void(0)"></a>
+									</li>
+									<li class="active">
+										<a href="javascript:void(0)">1</a>
+									</li>
+									<li>
+										<a href="javascript:void(0)">2</a>
+									</li>
+									<li>
+										<a href="javascript:void(0)">3</a>
+									</li>
+									<li>
+										<a href="javascript:void(0)">4</a>
+									</li>
+									<li>
+										<a href="javascript:void(0)">5</a>
+									</li>
+									<li class="elli"><span>...</span></li>
+									<li>
+										<a href="javascript:void(0)">尾页</a>
+									</li>
+									<li class="next"><a href="javascript:void(0)"></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<!-- 成交历史 -->
+					<div class="hide" data-showopt="chengjiao">
+						<div class="history-table">
+							<div class="his-th">
+								<div class="row clearfix">
+									<div class="td time">时间</div>
+									<div class="td style">类型</div>
+									<div class="td type">币种</div>
+									<div class="td num">数量</div>
+								</div>
+							</div>
+							<div class="his-tb">
+								<!-- 没有数据 -->
+								<div class="nodata">
+									<div class="img">
+										<img src="img/nodata.png" alt="无数据">
+									</div>
+									<div class="nodata-txt">无数据</div>
+								</div>
+								<!-- 有数据 -->
+								<!-- <div class="row clearfix">
+									<div class="td time">时间</div>
+									<div class="td style">类型</div>
+									<div class="td type">币种</div>
+									<div class="td num">数量</div>
+								</div> -->
+							</div>
+							<!-- 分页条 -->
+							<div class="table-page clearfix">
+								<ul class="table-pager">
+									<li class="prev">
+										<a href="javascript:void(0)"></a>
+									</li>
+									<li class="active">
+										<a href="javascript:void(0)">1</a>
+									</li>
+									<li>
+										<a href="javascript:void(0)">2</a>
+									</li>
+									<li>
+										<a href="javascript:void(0)">3</a>
+									</li>
+									<li>
+										<a href="javascript:void(0)">4</a>
+									</li>
+									<li>
+										<a href="javascript:void(0)">5</a>
+									</li>
+									<li class="elli"><span>...</span></li>
+									<li>
+										<a href="javascript:void(0)">尾页</a>
+									</li>
+									<li class="next"><a href="javascript:void(0)"></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 底部 -->
+		<div class="footer">
+			<div class="width-limit">
+				<div class="footer-box">
+					<h2>Cooperative <span class="sec">partner</span></h2>
+					<div class="blogroll">
+						<img src="img/blogroll.png" alt="友情链接">
+					</div>
+					<div class="foot-bottom clearfix">
+						<div class="foot-logo lf">
+							<img src="img/site-logo-footer.png" alt="DTP">
+						</div>
+						<div class="foot-info lf">
+							<div class="info-box service lf">
+								<dl>
+									<dt>服务</dt>
+									<dd><a href="./trading.html">交易中心</a></dd>
+									<dd><a href="javascript:void(0)">支持</a></dd>
+									<dd><a href="javascript:void(0)">提交请求</a></dd>
+								</dl>
+							</div>
+							<div class="info-box terms lf">
+								<dl>
+									<dt>条款说明</dt>
+									<dd><a href="javascript:void(0)">隐私政策</a></dd>
+									<dd><a href="javascript:void(0)">用户协议</a></dd>
+									<dd><a href="javascript:void(0)">手续费</a></dd>
+								</dl>
+							</div>
+							<div class="info-box about lf">
+								<dl>
+									<dt>关于我们</dt>
+									<dd><a href="javascript:void(0)">客户支持</a></dd>
+									<dd><a href="javascript:void(0)">联系我们</a></dd>
+									<dd><a href="./research.html">申请上币</a></dd>
+								</dl>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/base.js?rev=61de902955ef80bfc9239c750d3a74bf"></script>
+</body>
+</html>
